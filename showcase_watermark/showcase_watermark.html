@@ -1,0 +1,30 @@
+<!-- 
+        作者： 孙尊路
+        创建时间：2018-09-06 13:26:47
+        版本： [1.0, 2018/09/06]
+        描述： h5添加水印
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>h5添加水印</title>
+		<!-- H5页面窗口自动调整到设备宽度，并控制用户缩放页面 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!-- IOS中禁用将数字识别为电话号码/忽略Android平台中对邮箱地址的识别 -->
+		<meta name="format-detection" content="telephone=no, email=no" />
+	</head>
+
+	<body>
+		<button onclick="alert('透传成功')">测试点击透传是否生效</button>
+		<script type="text/javascript" src="js/watermark.min.js" ></script>
+		<script type="text/javascript">
+			// 实例化
+			new WaterMark({
+				watermark_txt: "孙尊路"
+			});
+		</script>
+	</body>
+
+</html>
